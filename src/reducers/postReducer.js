@@ -14,10 +14,10 @@ export default function(state = initialState, action){
                 items: action.payload
             }
         case NEW_POST:
-            console.log('new_post reducer');
+            console.log('post reducer');
             return {
                 ...state,
-                items: action.payload
+                item: action.payload
             }
         default:
             return state;
